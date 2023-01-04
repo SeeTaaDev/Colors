@@ -1,0 +1,8 @@
+messages:
+  error-color: "&cPlease enter a valid color."
+  success-add: "&aYou have correctly added the color %color%"
+  success-remove: "&aYou have correctly removed the color %color%"
+  error-already-exists: "&cThis color already exists."
+  error-doesnt-exist: "&cThis color doesn't exist."
+  specify-color: "&cPlease specify a color."
+  no-colors: "&cThere are no colors to display"
