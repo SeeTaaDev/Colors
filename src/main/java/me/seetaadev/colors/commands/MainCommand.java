@@ -12,8 +12,6 @@ import me.seetaadev.colors.Cache;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 @DefaultCommand
 @Command(name = "colors", description = "Opens the colors menu")
 public class MainCommand implements CommandClass {
@@ -47,7 +45,7 @@ public class MainCommand implements CommandClass {
             return;
         }
 
-        Cache cache = Cache.getCache(params[0]);
+        Cache cache = Cache.getCache(params[0].toUpperCase());
         if(cache.addToMap()) {
             sender.sendMessage(Message.fromMainConfig(plugin, "message.success-add", player).replace("%color%", params[0]));
         } else {
@@ -63,7 +61,7 @@ public class MainCommand implements CommandClass {
             return;
         }
 
-        Cache cache = Cache.getCache(params[0]);
+        Cache cache = Cache.getCache(params[0].toUpperCase());
         if(cache.removeFromMap()) {
             sender.sendMessage(Message.fromMainConfig(plugin, "message.success-remove", player).replace("%color%", params[0]));
         } else {
