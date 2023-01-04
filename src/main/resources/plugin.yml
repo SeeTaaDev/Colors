@@ -1,0 +1,6 @@
+name: Colors
+description: A plugin that adds colors to an inventory
+main: me.seetaadev.colors.ColorsPlugin
+version: ${project.version}
+author: "SeetaaDev"
+depend: [MeteoriteAPI]
